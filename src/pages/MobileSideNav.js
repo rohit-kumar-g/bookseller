@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState} from 'react';
 import { signOut } from 'firebase/auth';
 import { auth } from '../firebaseConfig'; // Adjust the import to your Firebase config
 import logo from '../logo2.png';
@@ -7,7 +7,7 @@ import '../css/stylesHome.css'; // Include your CSS
 function MobileSideNav({ user }) {
   const [isOpen, setIsOpen] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
-  const menuRef = useRef(null);
+  const [startX, setStartX] = useState(0);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -26,26 +26,37 @@ function MobileSideNav({ user }) {
     setShowPopup(false);
     // Optionally redirect to login or home page here
   };
-  const handleOutsideClick = (e) => {
-    if (menuRef.current && !menuRef.current.contains(e.target)) {
-      setIsOpen(false); // Close menu on outside click
+
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
+  const handleTouchStart = (e) => {
+    setStartX(e.touches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    const touchX = e.touches[0].clientX;
+    if (startX - touchX > 50) {
+      // Swipe left
+      setIsOpen(false);
+    } else if (touchX - startX > 50) {
+      // Swipe right
+      setIsOpen(true);
     }
   };
-  useEffect(() => {
-    if (isOpen) {
-      document.addEventListener('click', handleOutsideClick);
-    } else {
-      document.removeEventListener('click', handleOutsideClick);
-    }
-    return () => {
-      document.removeEventListener('click', handleOutsideClick);
-    };
-  }, [isOpen]);
+
   return (
-    <div className="mobile-side-nav">
+    <div
+      className="mobile-side-nav"
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+    >
       <button className="menu-button" onClick={toggleMenu}>
         ☰
       </button>
+
+      {isOpen && <div className="overlay" onClick={closeMenu}></div>}
 
       <div className={`side-menu ${isOpen ? 'open' : ''}`}>
         <div className="menu-header">

@@ -7,7 +7,7 @@ import CheckoutPage from './pages/CheckoutPage';
 import ClassesPage from './pages/ClassesPage';
 import BooksPage from './pages/BooksPage';
 import MobileSideNav from './pages/MobileSideNav'
-import './styles.css';
+import './css/styles.css';
 import logo from './headerLogo.png';
 
 import SuccessPage from './pages/SuccessPage';
