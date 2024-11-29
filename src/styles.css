@@ -4,7 +4,17 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.headerLogo{
+  padding-bottom: 20px;
+  margin: auto;
+  text-align: center;
+}
+.headerLogoImg{
+  width: 265px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f9;
@@ -224,4 +234,101 @@ h1 {
 
 .success-page button:hover {
   background-color: #2980b9;
+}
+
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.popup button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background-color: #0056b3;
+}
+
+
+.mobile-side-nav {
+  position: relative;
+}
+
+.menu-button {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: left 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.side-menu.open {
+  left: 0;
+}
+
+.menu-header {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.signout-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.signout-button:hover {
+  background-color: #d32f2f;
 }
