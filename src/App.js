@@ -11,6 +11,9 @@ import './css/styles.css';
 import logo from './headerLogo.png';
 
 import SuccessPage from './pages/SuccessPage';
+import BottomNav from './pages/BottomNav';
+import { Home } from './hmpage/Home/Home.jsx';
+import PremiumSignIn from './ScreenLogin/Loginpg1.js';
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -34,7 +37,7 @@ const App = () => {
         </Route>
 
         <Route path="/login" element= 
-          {user ? <Navigate to="/" /> : <LoginPage />}>
+          {user ? <Navigate to="/" /> : <PremiumSignIn />}>
         </Route>
 
         {/* <Route path="/home" element= 
@@ -50,10 +53,14 @@ const App = () => {
         </Route>
 
         
-        <Route path="/" element={<LoginPage />} />
-        <Route path="/home" element={<HomePage />} />
+        <Route path="/" element={<PremiumSignIn />} />
+        <Route path="/home" element={<><BottomNav/><HomePage /></>} />
         <Route path="/classes/:schoolId" element={<ClassesPage />} />
         <Route path="/books/:schoolId/:classId" element={<BooksPage />} />
+        <Route path='/test'element ={<>
+        <Home />
+
+        </>}/>
       </Routes>
     </Router>
   );

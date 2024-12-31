@@ -1,0 +1,64 @@
+.school-list-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .school-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-y: auto;
+    max-height: 80vh; /* Makes the list scrollable if too long */
+  }
+  
+  .school-card {
+    display: flex;
+    gap: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .school-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .school-card-image-wrapper {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .school-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .school-card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .school-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .school-address,
+  .school-rating,
+  .school-description {
+    font-size: 14px;
+    color: #555;
+    margin: 3px 0;
+  }
+  

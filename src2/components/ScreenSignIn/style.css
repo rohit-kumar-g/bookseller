@@ -1,0 +1,286 @@
+.screen-sign-in {
+  background-color: #f2f2f2;
+  border: 12px solid;
+  border-color: #000000;
+  border-radius: 16px;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+  width: 360px;
+}
+
+.screen-sign-in .get-started {
+  height: 48px;
+  left: 20px;
+  position: absolute;
+  top: 400px;
+  width: 322px;
+}
+
+.screen-sign-in .overlap-group {
+  background-color: #121212;
+  border-radius: 8px;
+  height: 48px;
+  position: relative;
+  width: 320px;
+}
+
+.screen-sign-in .text-wrapper {
+  color: #dedede;
+  font-family: "Open Sans-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  left: 121px;
+  letter-spacing: -0.41px;
+  line-height: 22px;
+  position: absolute;
+  text-align: center;
+  top: 13px;
+  width: 79px;
+}
+
+.screen-sign-in .new-member-register {
+  color: #000000;
+  font-family: "Open Sans-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  left: 106px;
+  letter-spacing: -0.41px;
+  line-height: 22px;
+  position: absolute;
+  text-align: center;
+  top: 739px;
+  white-space: nowrap;
+}
+
+.screen-sign-in .span {
+  letter-spacing: -0.06px;
+}
+
+.screen-sign-in .text-wrapper-2 {
+  font-family: "Open Sans-SemiBold", Helvetica;
+  font-weight: 600;
+  letter-spacing: -0.06px;
+}
+
+.screen-sign-in .overlap {
+  background-color: #f2f2f2;
+  height: 120px;
+  left: 0;
+  position: absolute;
+  top: 48px;
+  width: 360px;
+}
+
+.screen-sign-in .group {
+  height: 32px;
+  left: 16px;
+  position: relative;
+  top: 16px;
+  width: 230px;
+}
+
+.screen-sign-in .div {
+  color: #121212;
+  font-family: "Open Sans-SemiBold", Helvetica;
+  font-size: 24px;
+  font-weight: 600;
+  height: 32px;
+  left: 95px;
+  letter-spacing: 0;
+  line-height: 32px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.screen-sign-in .arrow-back {
+  height: 24px;
+  left: 0;
+  position: absolute;
+  top: 4px;
+  width: 24px;
+}
+
+.screen-sign-in .status-bar {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  padding: 12px 20px;
+  position: absolute;
+  top: 0;
+  width: 360px;
+}
+
+.screen-sign-in .content {
+  align-self: stretch;
+  height: 24px;
+  position: relative;
+  width: 100%;
+}
+
+.screen-sign-in .time {
+  color: #121212;
+  font-family: "Google Sans Text Medium-Medium", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  height: 20px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 20px;
+  position: absolute;
+  top: 1px;
+  white-space: nowrap;
+}
+
+.screen-sign-in .base-system-status {
+  height: 24px;
+  left: 269px;
+  position: absolute;
+  top: 0;
+  width: 51px;
+}
+
+.screen-sign-in .p {
+  color: #252525;
+  font-family: "Open Sans-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  height: 32px;
+  left: 20px;
+  letter-spacing: 0;
+  line-height: 32px;
+  position: absolute;
+  top: 168px;
+  white-space: nowrap;
+}
+
+.screen-sign-in .text-wrapper-3 {
+  color: #000000;
+  font-family: "Open Sans-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  height: 32px;
+  left: 123px;
+  letter-spacing: 0;
+  line-height: 32px;
+  position: absolute;
+  text-decoration: underline;
+  top: 472px;
+  white-space: nowrap;
+}
+
+.screen-sign-in .login {
+  height: 136px;
+  left: 20px;
+  position: absolute;
+  top: 232px;
+  width: 320px;
+}
+
+.screen-sign-in .email {
+  height: 56px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 322px;
+}
+
+.screen-sign-in .username-email-wrapper {
+  background-color: #dedede;
+  border: 2px solid;
+  border-color: #121212;
+  border-radius: 5px;
+  height: 56px;
+  position: relative;
+  width: 320px;
+}
+
+.screen-sign-in .username-email {
+  background: transparent;
+  border: none;
+  color: #252525;
+  font-family: "Open Sans-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  height: 32px;
+  left: 9px;
+  letter-spacing: 0;
+  line-height: 32px;
+  padding: 0;
+  position: absolute;
+  top: 10px;
+  white-space: nowrap;
+}
+
+.screen-sign-in .password {
+  height: 56px;
+  left: 0;
+  position: absolute;
+  top: 80px;
+  width: 322px;
+}
+
+.screen-sign-in .overlap-2 {
+  background-color: #dedede;
+  border-radius: 5px;
+  height: 56px;
+  position: relative;
+  width: 320px;
+}
+
+.screen-sign-in .label {
+  color: #252525;
+  font-family: "Open Sans-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  height: 32px;
+  left: 11px;
+  letter-spacing: 0;
+  line-height: 32px;
+  position: absolute;
+  top: 12px;
+  white-space: nowrap;
+}
+
+.screen-sign-in .remove-red-eye {
+  height: 24px;
+  left: 285px;
+  position: absolute;
+  top: 16px;
+  width: 24px;
+}
+
+.screen-sign-in .navigation-bar {
+  height: 16px;
+  left: 0;
+  position: absolute;
+  top: 784px;
+  width: 360px;
+}
+
+.screen-sign-in .items {
+  height: 2px;
+  left: 144px;
+  position: absolute;
+  top: 8px;
+  width: 72px;
+}
+top: 784px;
+  width: 360px;
+}
+
+.screen-sign-in .items {
+  height: 2px;
+  left: 144px;
+  position: absolute;
+  top: 8px;
+  width: 72px;
+}
+
+.screen-sign-in .forgot-password-link {
+  text-decoration: underline;
+  color: inherit;
+}
