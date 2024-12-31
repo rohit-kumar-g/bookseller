@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import {auth } from "./firebaseConfig";
-import LoginPage from './pages/LoginPage';
-import HomePage from './pages/HomePage';
-import CheckoutPage from './pages/CheckoutPage';
-import ClassesPage from './pages/ClassesPage';
-import BooksPage from './pages/BooksPage';
-import MobileSideNav from './pages/MobileSideNav'
+import {auth } from "./firebaseConfig.jsx";
+import LoginPage from './pages/LoginPage.jsx';
+import HomePage from './pages/HomePage.jsx';
+import CheckoutPage from './pages/CheckoutPage.jsx';
+import ClassesPage from './pages/ClassesPage.jsx';
+import BooksPage from './pages/BooksPage.jsx';
+import MobileSideNav from './pages/MobileSideNav.jsx'
 import './css/styles.css';
 import logo from './headerLogo.png';
 
-import SuccessPage from './pages/SuccessPage';
-import BottomNav from './pages/BottomNav';
+import SuccessPage from './pages/SuccessPage.jsx';
+import BottomNav from './pages/BottomNav.jsx';
 import { Home } from './hmpage/Home/Home.jsx';
-import PremiumSignIn from './ScreenLogin/Loginpg1.js';
+import PremiumSignIn from './ScreenLogin/Loginpg1.jsx';
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -32,7 +32,7 @@ const App = () => {
           <img src={logo} alt="Logo" className="headerLogoImg" />
         </div>
       <Routes>
-        <Route exact path="/" element=
+        <Route  exact path="/" element=
           {user ? <HomePage /> : <Navigate to="/login" />}>
         </Route>
 

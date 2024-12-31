@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const SchoolListContainer = styled.div`
   padding: 20px;
@@ -84,7 +84,7 @@ const SchoolList = ({ schools }) => {
       <h2>Our Partner Schools</h2>
       <SchoolListWrapper>
         {schools.map((school) => (
-          <SchoolCard 
+          <SchoolCard
             key={school.id} 
             onClick={() => navigate(`/classes/${school.id}`)}
           >
