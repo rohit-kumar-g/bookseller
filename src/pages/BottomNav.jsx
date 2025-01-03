@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./BottomNav.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -8,8 +9,11 @@ import {
   faUser,
   faBell,
 } from "@fortawesome/free-solid-svg-icons";
-
+import HomePage from "./HomePage";
+import { usePopupState } from "../profile/Popup";
 const BottomNav = () => {
+  const navigate = useNavigate();
+  const { isOpen, setIsOpen, showPopup, setShowPopup } = usePopupState();
   const [activeTab, setActiveTab] = useState("home");
 
   const navItems = [
@@ -21,12 +25,22 @@ const BottomNav = () => {
   ];
 
   const handleNavClick = (id) => {
+
     setActiveTab(id);
+    console.log(id)
     // Simulate vibration feedback (vibration is not fully supported on web)
     if ("vibrate" in navigator) navigator.vibrate(50);
-    if(id == "profile"){
-      
+
+    if (id === "cart") {
+      navigate("/cart");
+    } else if (id === "home") {
+      navigate("/");
+    } else if (id === "profile") {
+      navigate("/profile");
+    } else if (id === "notifications") {
+      navigate("/");
     }
+
   };
 
   return (

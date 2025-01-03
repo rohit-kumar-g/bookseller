@@ -65,7 +65,6 @@ function HomePage() {
 
       <SchoolCards schools={schoolsarr}/>
       <SchoolList schools={schoolsarr} />
-      <BottomNav/>
       {/* <ul>
         {schools.map((school) => (
           <li key={school.id} onClick={() => navigate(`/classes/${school.id}`)}>
